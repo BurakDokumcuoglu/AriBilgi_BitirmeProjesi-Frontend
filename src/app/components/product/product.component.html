@@ -1,0 +1,12 @@
+
+ <div *ngFor="let product of products" class="card float-lg-start" style="width: 18rem;">
+    <img width="130px" height="130px" src="assets/images/{{product.productId}}.jpg" class="card-img-top" alt="...">
+    <div  class="card-body">
+      <h5 class="card-title">{{product.productName}}</h5>
+      <p class="card-text">{{product.productInfo}}</p>
+      <p class="card-text">{{product.unitPrice}}  ₺</p>
+      <button (click)="addToCart(product)" class="btn btn-primary">Sepete Ekle</button>
+    </div>
+  </div> 
+
+  
